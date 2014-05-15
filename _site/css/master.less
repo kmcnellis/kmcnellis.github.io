@@ -10,11 +10,12 @@
 @neutral: #f2ece2;
 
 // mine
-@Evergreen-light: #C2C2C2;
-@Evergreen-dark: #052005;
+@Evergreen-light: #b6b6b6;
+@Evergreen-medium: #C2C2C2;
+@Evergreen-dark: #313131;
+@Evergreen-darkgreen: #052005;
 @Evergreen-verydark: #000000;
 @Evergreen-green: #094809;
-@Evergreen-medium: white;
 
 // credit: SCX ID at http://www.colourlovers.com/palette/3075369/Alon
 @Alon-Enderland: #2ECC71;
@@ -45,21 +46,21 @@
 @Curiosity-Heliotrope: #99173C;
 
 
-@font-size-inc: 6px;
-@font-size-base: 2*@font-size-inc;
+@font-size-inc: 4px;
+@font-size-base: 3*@font-size-inc;
 
 @font-family: arial, helvetica, sans-serif;
-
-@margin-inc: 12px;
-@margin-base: 2*@margin-inc;
 
 @padding-inc: 3px;
 @padding-base: 2*@padding-inc;
 
 @text-color: @Evergreen-light;
-@background-color: @Evergreen-verydark;
-@titleBar-color: @Evergreen-dark;
 @titleText-color: @Evergreen-medium;
+
+@box-color: @Evergreen-dark;
+
+@background-color: @Evergreen-verydark;
+@titleBar-color: @Evergreen-darkgreen;
 @divider-color: @Evergreen-green;
 
 h1{
@@ -67,29 +68,23 @@ h1{
     font-family: @font-family;
     font-weight: bold;
     color: @text-color;
-    background-color: @background-color;
     margin-top:0;
     margin-right:0;
     margin-left:0;
     margin-bottom:0;
 
-    padding-top:@padding-base;
-    padding-right:0;
-    padding-left:0;
-    padding-bottom:@padding-base;
-
 }
 h2{
     font-size: @font-size-base+@font-size-inc;
-    background-color: @background-color;
-    margin:@margin-base;
-    padding:@padding-base;
     font-weight: normal;
-
+    color: @text-color;
+    margin-top:0;
+    margin-right:0;
+    margin-left:0;
+    margin-bottom:0;
 }
 body {
     font-size: @font-size-base;
-    color: @text-color;
     background-color: @background-color;
     font-family: @font-family;
     margin:0;
@@ -126,4 +121,23 @@ body {
 }
 .sub-link{
     float:right;
+}
+.page-content{
+    margin-left: 16%;
+    margin-right: 16%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+
+    padding-top:4%;
+    padding-right:4%;
+    padding-left:4%;
+    padding-bottom:4%;
+
+    background-color: @box-color;
+
+    text-align: left;
+    font-size: @font-size-base*2;
+    font-family: @font-family;
+    font-weight: lighter;
+    color: @titleBar-color;
 }
