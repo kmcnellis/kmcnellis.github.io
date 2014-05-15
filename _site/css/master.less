@@ -1,0 +1,129 @@
+@dark-grey: #494747;
+@light-grey: #d4d4d4;
+
+
+@dark-blue: #0c1443;
+@dark-blue2: #120c43;
+@pale-blue: lighten(@dark-blue, 80%);
+@light-blue: #50c9fd;
+@dark-green: #1c5b02;
+@neutral: #f2ece2;
+
+// mine
+@Evergreen-light: #C2C2C2;
+@Evergreen-dark: #052005;
+@Evergreen-verydark: #000000;
+@Evergreen-green: #094809;
+@Evergreen-medium: white;
+
+// credit: SCX ID at http://www.colourlovers.com/palette/3075369/Alon
+@Alon-Enderland: #2ECC71;
+@Alon-759am: #68D68B;
+@Alon-cloudyblue: #ECF0F1;
+@Alon-Tashnt: #BDC3C7;
+@Alon-eyesonyou: #5D6A6C;
+
+// credit: SCX ID at http://www.colourlovers.com/palette/3083149/Tistar_Lorco
+@Tistar-AzulDeep: #192B44;
+@Tistar-ShallowWaters: #1A86AD;
+@Tistar-Rowestblue: #67B5D2;
+@Tistar-faceless: #F0F1EB;
+@Tistar-Gggreyyy: #CFCFCF;
+
+// credit: merittthomas at http://www.colourlovers.com/palette/3192417/Leaflr
+@Leaflr-Enderland : #2ECC71 ;
+@Leaflr-Nephritis : #27AE60 ;
+@Leaflr-505460 : #505460 ;
+@Leaflr-aerobotics : #D4D5D9 ;
+@Leaflr-MorningChirp : #F0F1F5 ;
+
+// credit: Miaka at http://www.colourlovers.com/palette/444487/Curiosity_Killed
+@Curiosity-Vichyssoise: #EFFFCD;
+@Curiosity-Hex: #DCE9BE;
+@Curiosity-shadowDirt: #555152;
+@Curiosity-EveningCloud: #2E2633;
+@Curiosity-Heliotrope: #99173C;
+
+
+@font-size-inc: 6px;
+@font-size-base: 2*@font-size-inc;
+
+@font-family: arial, helvetica, sans-serif;
+
+@margin-inc: 12px;
+@margin-base: 2*@margin-inc;
+
+@padding-inc: 3px;
+@padding-base: 2*@padding-inc;
+
+@text-color: @Evergreen-light;
+@background-color: @Evergreen-verydark;
+@titleBar-color: @Evergreen-dark;
+@titleText-color: @Evergreen-medium;
+@divider-color: @Evergreen-green;
+
+h1{
+    font-size: @font-size-base*2;
+    font-family: @font-family;
+    font-weight: bold;
+    color: @text-color;
+    background-color: @background-color;
+    margin-top:0;
+    margin-right:0;
+    margin-left:0;
+    margin-bottom:0;
+
+    padding-top:@padding-base;
+    padding-right:0;
+    padding-left:0;
+    padding-bottom:@padding-base;
+
+}
+h2{
+    font-size: @font-size-base+@font-size-inc;
+    background-color: @background-color;
+    margin:@margin-base;
+    padding:@padding-base;
+    font-weight: normal;
+
+}
+body {
+    font-size: @font-size-base;
+    color: @text-color;
+    background-color: @background-color;
+    font-family: @font-family;
+    margin:0;
+}
+
+.title-bar{
+    width:100%;
+    padding-top:@padding-base;
+    padding-right:0;
+    padding-left:0;
+    padding-bottom:@padding-base;
+
+    margin: 0 0 0 0;
+    background-color: @titleBar-color;
+}
+.title-bar a{
+    text-align: left;
+    padding-left:@padding-base;
+    padding-right:@padding-base;
+    font-size: @font-size-base*2;
+    font-family: @font-family;
+    font-weight: lighter;
+    color: @titleText-color;
+}
+.divider{
+    width:100%;
+    padding-top:3px;
+    padding-right:0;
+    padding-left:0;
+    padding-bottom:0;
+
+    margin: 0 0 0 0;
+    background-color: @divider-color;
+}
+.sub-link{
+    float:right;
+}
