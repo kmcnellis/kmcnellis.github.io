@@ -1,0 +1,91 @@
+@import "basic.less";
+#header{
+    width:100%;
+    color: @titleText-color;
+    position: fixed;
+    background-color: @titleBar-color;
+    font-family: @font-serif;
+    font-weight: normal;
+    margin: 0 0 0 0;
+    padding: @padding-inc 0 0 0;
+    box-shadow: 0px 1px 4px 2px black;
+    top:0;
+}
+.title-bar{
+    width:100%;
+    //padding:0 0 @font-size-inc;
+    //margin:0;
+    display: block;
+
+}
+
+.sub-link{
+    float: right;
+    padding-right: @padding-base;
+    padding-left: @padding-base;
+    display: inline-block;
+    vertical-align: top;
+}
+#title{
+    padding-left:@padding-inc*2;
+    padding-right:@padding-inc*2;
+    padding-top: @font-size-inc;
+
+    font-size: @font-size-base*3;
+    margin: 0 @padding-inc*2;
+}
+.title-bar li{
+    text-align: left;
+    font-weight: lighter;
+    color: @titleLine-color;
+
+}
+
+.title-bar ul {
+    list-style: none;
+    position: relative;
+    display: inline-block;
+    margin:0;
+    margin-top:@font-size-inc;
+    padding:0;
+}
+
+.title-bar ul li{
+    float: left;
+    padding-top: 0;
+
+    padding-left: @padding-inc;
+    padding-right: @padding-inc;
+    position: relative;
+    margin: 0 @padding-inc*2 0;
+
+    border-bottom: 3px solid  @Evergreen-dark;
+    font-size: @font-size-base*2;
+    height: 1.1em ;
+
+
+}
+
+.title-bar ul li:hover{
+    border-bottom-color:@Evergreen-red;
+}
+
+#selected{
+    border-bottom-color:@Evergreen-green;
+}
+
+#footer{
+    width:100%;
+    display: block;
+    text-align: center;
+    vertical-align: center;
+    position: absolute;
+    font-family: @font-serif;
+    height: 1em;
+    bottom:0;
+    font-size: @font-size-base+1px;
+    color: @titleText-color;
+    padding: @padding-inc*4;
+    border-top: @font-size-inc solid  @Evergreen-dark;
+
+}

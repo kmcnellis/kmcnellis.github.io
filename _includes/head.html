@@ -1,6 +1,17 @@
 <head>
+	{% capture root %}{% if page.root %}{{ page.root }}{% else %}{{ post.root }}{% endif %}{%endcapture%}
+
 	<title>{{page.title}}</title>
-	<link rel="stylesheet/less" href="css/master.less" type="text/less" media="screen" title={{page.title}} charset="utf-8">
-	<!-- <link rel="stylesheet" href="/css/master.css" type="text/css"  media="screen" title={{page.title}} charset="utf-8"> -->
-	<script src="less-1.7.0.js" type="text/javascript"></script>
-</head>
+	<link href='http://fonts.googleapis.com/css?family=Quattrocento:400' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Raleway:300,700' rel='stylesheet' type='text/css'></head>
+
+	<link rel="stylesheet/less" href="{{root}}css/master.less" type="text/less" media="screen" title={{page.title}} charset="utf-8">
+	<script src="{{root}}less-1.7.0.js" type="text/javascript"></script>
+	<!--[if lt IE 7]>
+	<style media="screen" type="text/css">
+	#container {
+		height:100%;
+	}
+	</style>
+	<![endif]-->
