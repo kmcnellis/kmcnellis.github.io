@@ -2,12 +2,12 @@
 #header{
     width:100%;
     color: @titleText-color;
-    position: fixed;
+    // position: fixed;
     background-color: @titleBar-color;
     font-family: @font-serif;
     font-weight: normal;
     margin: 0 0 0 0;
-    padding: @padding-inc 0 0 0;
+    padding: @size-inc @size-inc 0;
     box-shadow: 0px 1px 4px 2px black;
     top:0;
 }
@@ -18,21 +18,32 @@
     display: block;
 
 }
+#title-head{
+    padding-left: @size-base;
+    padding-right: @size-base;
+    padding-top: @size-inc;
+
+    margin: 0 @size-inc;
+    font-size: @size-large;
+
+}
 
 .sub-link{
     float: right;
-    padding-right: @padding-base;
-    padding-left: @padding-base;
+    padding-right: @size-base;
+    padding-left: @size-base;
     display: inline-block;
     vertical-align: top;
+    font-size: @size-medium;
+
 }
 #title{
-    padding-left:@padding-inc*2;
-    padding-right:@padding-inc*2;
-    padding-top: @font-size-inc;
+    padding-left: @size-base;
+    padding-right: @size-base;
+    padding-top: @size-inc;
 
-    font-size: @font-size-base*3;
-    margin: 0 @padding-inc*2;
+    font-size: @size-title;
+    margin: 0 @size-inc;
 }
 .title-bar li{
     text-align: left;
@@ -43,27 +54,25 @@
 
 .title-bar ul {
     list-style: none;
-    position: relative;
+    // position: relative;
     display: inline-block;
     margin:0;
-    margin-top:@font-size-inc;
+    margin-top: @size-inc;
     padding:0;
 }
 
-.title-bar ul li{
+.title-bar  ul li{
     float: left;
     padding-top: 0;
 
-    padding-left: @padding-inc;
-    padding-right: @padding-inc;
-    position: relative;
-    margin: 0 @padding-inc*2 0;
+    padding-left: @size-inc;
+    padding-right: @size-inc;
+    // position: relative;
+    margin: 0 @size-base 0;
 
     border-bottom: 3px solid  @Evergreen-dark;
-    font-size: @font-size-base*2;
+    font-size: @size-medium;
     height: 1.1em ;
-
-
 }
 
 .title-bar ul li:hover{
@@ -75,6 +84,7 @@
 }
 
 #footer{
+    bottom:0;
     width:100%;
     display: block;
     text-align: center;
@@ -82,10 +92,9 @@
     position: absolute;
     font-family: @font-serif;
     height: 1em;
-    bottom:0;
-    font-size: @font-size-base+1px;
+    font-size: @size-base;
     color: @titleText-color;
-    padding: @padding-inc*4;
-    border-top: @font-size-inc solid  @Evergreen-dark;
+    padding: @size-inc*4;
+    border-top: @size-inc solid  @Evergreen-dark;
 
 }
