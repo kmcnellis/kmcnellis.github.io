@@ -34,7 +34,10 @@
     padding-left: @size-base;
     display: inline-block;
     vertical-align: top;
-    font-size: @size-medium;
+
+}
+.sub-link a{
+    font-size: @size-small;
 
 }
 #title{
@@ -65,12 +68,13 @@
     float: left;
     padding-top: 0;
 
-    padding-left: @size-inc;
-    padding-right: @size-inc;
+    padding-left: 2;
+    padding-right: 2;
     // position: relative;
-    margin: 0 @size-base 0;
+    margin: 0 @size-inc*2 0;
 
-    border-bottom: 3px solid  @Evergreen-dark;
+    border-bottom: 3px solid;
+    border-bottom-color: @Evergreen-dark;
     font-size: @size-medium;
     height: 1.1em ;
 }
@@ -92,7 +96,7 @@
     position: absolute;
     font-family: @font-serif;
     height: 1em;
-    font-size: @size-base;
+    font-size: @size-inc+@size-base;
     color: @titleText-color;
     padding: @size-inc*4;
     border-top: @size-inc solid  @Evergreen-dark;

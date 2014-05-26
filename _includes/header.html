@@ -3,11 +3,41 @@
 	<span id="title-head" src="/"><a href="/">Kiana McNellis</a></span>
 	<div class="sub-link">
 	<ul>
-		<li><a href="/about/">About</a></li>
+		{% if page.name == "about" %}
+		<li id= "selected"><a href="/about/">About</a></li>
+		{% else %}
+		<li><a id= "selected" href="/about/">About</a></li>
+		{% endif %}
+
+		{% if page.name == "projects" %}
+		<li id= "selected"><a href="/projects/">Projects</a> </li>
+		{% else %}
+		<li><a href="/projects/">Projects</a> </li>
+		{% endif %}
+
+		{% if page.name == "college" %}
+		<li id= "selected"><a href="/college/">College</a> </li>
+		{% else %}
+		<li><a href="/college/">College</a> </li>
+		{% endif %}
+
+		{% if page.name == "work" %}
+		<li id= "selected"><a href="/work/">Work</a></li>
+		{% else %}
 		<li><a href="/work/">Work</a></li>
-		<li> <a href="/projects/">Projects</a> </li>
-		<li> <a href="/resume/">Resume</a> </li>
-		<li> <a href="/contact/">Contact</a> </li>
+		{% endif %}
+
+		{% if page.name == "resume" %}
+		<li id= "selected"><a href="/resume/">Resume</a> </li>
+		{% else %}
+		<li><a href="/resume/">Resume</a> </li>
+		{% endif %}
+
+		{% if page.name == "contact" %}
+		<li id= "selected"><a href="/contact/">Contact</a> </li>
+		{% else %}
+		<li><a href="/contact/">Contact</a> </li>
+		{% endif %}
 	</ul>
 </div>
 </div>

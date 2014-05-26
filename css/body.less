@@ -17,7 +17,7 @@ body {
    color: @titleBar-color;
    margin-left: 4%;
    margin-right: 4%;
-   margin-top: @size-base;
+   margin-top: @size-small;
    margin-bottom: 2%;
 }
 
@@ -40,16 +40,15 @@ body {
     padding-bottom: 2%;
     -moz-border-radius: 10px;
     border-radius: 10px;
-
     background-color: @box-color;
-
+    min-height: 151px + 2*@size-base;
     text-align: left;
     font-weight: lighter;
     color: @titleBar-color;
 }
 
 h1{
-    font-family: @font-serif;
+    font-family: @font-sans;
     font-size: @size-medium;
     font-weight: 400;
     color: @heading-color;
@@ -57,6 +56,8 @@ h1{
     margin-right:0;
     margin-left:0;
     margin-bottom:@size-base;
+    text-align: center;
+    width:100%;
 }
 
 h2{
@@ -80,7 +81,11 @@ p{
     margin-left:0;
     margin-bottom:0;
 }
-
+img{
+    margin: @size-base;
+    margin-left: @size-small;
+    float: right;
+}
 .divider{
     width:100%;
     padding-top:@size-inc;
@@ -93,26 +98,26 @@ p{
 }
 
 a:link {
-    color: inherit; /* blue colors for links too */
-    text-decoration: inherit; /* no underline */
+    color: inherit;
+   text-decoration: inherit;
     font-size: inherit;
 }
 
 a:visited {
-    color: inherit; /* blue colors for links too */
-    text-decoration: inherit; /* no underline */
+    color: inherit;
+    text-decoration: inherit;
     font-size: inherit;
 }
 
 a:hover {
-    color: inherit; /* blue colors for links too */
-    text-decoration: inherit; /* no underline */
+    color: inherit;
+ xt-decoration: inherit;
     font-size: inherit;
 }
 
 a:active {
-    color: inherit; /* blue colors for links too */
-    text-decoration: inherit; /* no underline */
+    color: inherit;
+   tx-ecoration: inherit;
     font-size: inherit;
 }
 
@@ -141,27 +146,51 @@ a:active {
 a.sub-hover:hover{
     border-bottom-color:@Evergreen-red;
 }
-a.red-hover:link {
-    color: inherit; /* blue colors for links too */
-    text-decoration: inherit; /* no underline */
+p a.red-hover:link {
+    color: inherit;
+    text-decoration: inherit;
     font-size: inherit;
 
 }
 a.red-hover:visited {
-    color: inherit; /* blue colors for links too */
-    text-decoration: inherit; /* no underline */
+    color: inherit;
+    text-decoration: inherit;
     font-size: inherit;
 
 }
 a.red-hover:hover {
-    color: @Evergreen-red; /* blue colors for links too */
-    text-decoration: inherit; /* no underline */
+    color: @Evergreen-red;
+    text-decoration: inherit;
     font-size: inherit;
 
 }
 a.red-hover:active {
-    color: @Evergreen-red; /* blue colors for links too */
-    text-decoration: inherit; /* no underline */
+    color: @Evergreen-red;
+    text-decoration: inherit;
+    font-size: inherit;
+
+}
+p a.red-hover:link {
+    color: #A0B5A1;
+    text-decoration: inherit;
+    font-size: inherit;
+
+}
+p a.red-hover:visited {
+    color: #A0B5A1;
+    text-decoration: inherit;
+    font-size: inherit;
+
+}
+p a.red-hover:hover {
+    color: @Evergreen-red;
+    text-decoration: inherit;
+    font-size: inherit;
+
+}
+p a.red-hover:active {
+    color: @Evergreen-red;
+    text-decoration: inherit;
     font-size: inherit;
 
 }
