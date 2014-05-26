@@ -18,7 +18,7 @@ body {
    margin-left: 4%;
    margin-right: 4%;
    margin-top: @size-small;
-   margin-bottom: 2%;
+   margin-bottom: 5*@size-inc+4*@size-base;
 }
 
 .home{
@@ -69,6 +69,19 @@ h2{
     margin-right:0;
     margin-left:0;
     margin-bottom:0;
+    padding-top:@size-small/2;
+    line-height:0;
+}
+h3{
+    font-family: @font-sans;
+    font-size: @size-small;
+    font-weight: 400;
+    color: @heading-color;
+    margin-top:0;
+    margin-right:0;
+    margin-left:0;
+    margin-bottom:0;
+    padding:0;
 }
 
 p{
@@ -135,6 +148,27 @@ a:active {
     height: @size-medium ;
 
 }
+.content-box{
+     width: 100%;
+}
+.content-split{
+    padding-top: @size-small;
+}
+.content-title{
+    display:inline-block;
+    width: 10%;
+    vertical-align: top;
+    padding-top: @size-inc;
+}
+.content-text{
+    padding-left: @size-large;
+    display:inline-block;
+    vertical-align: top;
+    width: 70%;
+    padding-top: @size-inc;
+
+}
+
 
 .sub-hover{
     padding-left: @size-inc;
@@ -171,13 +205,13 @@ a.red-hover:active {
 
 }
 p a.red-hover:link {
-    color: #A0B5A1;
+    color: @Evergreen-palegreen;
     text-decoration: inherit;
     font-size: inherit;
 
 }
 p a.red-hover:visited {
-    color: #A0B5A1;
+    color: @Evergreen-palegreen;
     text-decoration: inherit;
     font-size: inherit;
 

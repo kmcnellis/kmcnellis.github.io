@@ -1,4 +1,4 @@
-exclude: [gemfile, Gemfile.lock, guardfile, makefile]
+exclude: [gemfile, Gemfile.lock, guardfile, makefile, README.txt]
 defaults:
   -
     scope:
