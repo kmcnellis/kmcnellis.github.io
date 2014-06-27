@@ -94,11 +94,12 @@ p{
     margin-left:0;
     margin-bottom:0;
 }
-img{
+.main-img{
     margin: @size-base;
     margin-left: @size-small;
     float: right;
 }
+
 .divider{
     width:100%;
     padding-top:@size-inc;
@@ -111,42 +112,28 @@ img{
 }
 
 a:link {
-    color: inherit;
-   text-decoration: inherit;
+    text-decoration: inherit;
     font-size: inherit;
 }
 
 a:visited {
-    color: inherit;
     text-decoration: inherit;
     font-size: inherit;
 }
 
 a:hover {
-    color: inherit;
- xt-decoration: inherit;
+    text-decoration: inherit;
     font-size: inherit;
 }
 
 a:active {
-    color: inherit;
-   tx-ecoration: inherit;
+    text-decoration: inherit;
     font-size: inherit;
 }
 
 .title{
     padding-top: @size-base;
     height: @size-title ;
-
-}
-.sub{
-    font-family: @font-serif;
-    text-align: center;
-    font-size: @size-large;
-    font-weight: lighter;
-    color: @Evergreen-lightgreen;
-    height: @size-medium ;
-
 }
 .content-box{
      width: 100%;
@@ -168,61 +155,99 @@ a:active {
     padding-top: @size-inc;
 
 }
+.content-link{
+    padding-left: @size-large;
+    display:inline-block;
+    width: 95%;
+    height: 100%;
+    margin-top: @size-inc;
+    height: 80px;
+    text-align: center;
+    vertical-align: top;
 
+}
+.content-link p{
+    display:inline-block;
+    vertical-align: middle;
+}
+.content-image{
+    display:inline-block;
+    padding-right: @size-base;
+    -moz-osx-font-smoothing: grayscale;
+    vertical-align: middle;
 
-.sub-hover{
+}
+.home-menu{
+    font-family: @font-serif;
+    text-align: center;
+    font-size: @size-large;
+    font-weight: lighter;
+    color: @Evergreen-lightgreen;
+    height: @size-medium;
+
+}
+.title.home-menu{
+    color:  @titleText-color;
+}
+.sub-menu{
+    font-family: inherit;
+    text-align: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    height: inherit;
+
     padding-left: @size-inc;
     padding-right: @size-inc;
     // position: relative;
     margin: 0 @size-inc 0;
-    border-bottom: 3px solid  @Evergreen-dark;
+    //border-bottom: 3px solid  @Evergreen-dark;
 }
-a.sub-hover:hover{
+a.sub-menu:hover{
+    border-bottom: 3px solid;
     border-bottom-color:@Evergreen-red;
 }
-p a.red-hover:link {
+p a.main-link:link {
     color: inherit;
     text-decoration: inherit;
     font-size: inherit;
 
 }
-a.red-hover:visited {
+p a.main-link:link {
+    color: @Evergreen-palegreen;
+    text-decoration: inherit;
+    font-size: inherit;
+
+}
+a.main-link:visited {
     color: inherit;
     text-decoration: inherit;
     font-size: inherit;
 
 }
-a.red-hover:hover {
-    color: @Evergreen-red;
-    text-decoration: inherit;
-    font-size: inherit;
-
-}
-a.red-hover:active {
-    color: @Evergreen-red;
-    text-decoration: inherit;
-    font-size: inherit;
-
-}
-p a.red-hover:link {
+p a.main-link:visited {
     color: @Evergreen-palegreen;
     text-decoration: inherit;
     font-size: inherit;
 
 }
-p a.red-hover:visited {
-    color: @Evergreen-palegreen;
+a.main-link:hover {
+    color: @Evergreen-red;
     text-decoration: inherit;
     font-size: inherit;
-
 }
-p a.red-hover:hover {
+p a.main-link:hover {
     color: @Evergreen-red;
     text-decoration: inherit;
     font-size: inherit;
 
 }
-p a.red-hover:active {
+a.main-link:active {
+    color: @Evergreen-red;
+    text-decoration: inherit;
+    font-size: inherit;
+
+}
+p a.main-link:active {
     color: @Evergreen-red;
     text-decoration: inherit;
     font-size: inherit;
