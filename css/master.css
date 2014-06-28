@@ -35,7 +35,6 @@ body {
   -moz-border-radius: 10px;
   border-radius: 10px;
   background-color: #313131;
-  min-height: 167px;
   text-align: left;
   font-weight: lighter;
   color: #000000;
@@ -62,7 +61,6 @@ h2 {
   margin-left: 0;
   margin-bottom: 0;
   padding-top: 8px;
-  line-height: 0;
 }
 h3 {
   font-family: 'Raleway', sans-serif;
@@ -125,9 +123,14 @@ a:active {
 .content-split {
   padding-top: 16px;
 }
+.content-mixed {
+  display: relative;
+  width: 100%;
+  text-align: center;
+}
 .content-title {
   display: inline-block;
-  width: 10%;
+  width: 12%;
   vertical-align: top;
   padding-top: 4px;
 }
@@ -135,18 +138,27 @@ a:active {
   padding-left: 32px;
   display: inline-block;
   vertical-align: top;
-  width: 70%;
+  width: 68%;
   padding-top: 4px;
 }
 .content-link {
-  padding-left: 32px;
-  display: inline-block;
-  width: 95%;
-  height: 100%;
-  margin-top: 4px;
-  height: 80px;
+  display: relative;
+  width: 100%;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  line-height: 1em;
   text-align: center;
-  vertical-align: top;
+}
+.main-link i {
+  font-size: 24px;
+  font-color: inherit;
+}
+.base-bar.main-link i {
+  font-color: inherit;
+  font-size: 16px;
+}
+.main-link a:link {
+  font-color: white;
 }
 .content-link p {
   display: inline-block;
@@ -155,7 +167,6 @@ a:active {
 .content-image {
   display: inline-block;
   padding-right: 8px;
-  -moz-osx-font-smoothing: grayscale;
   vertical-align: middle;
 }
 .home-menu {
@@ -183,7 +194,7 @@ a.sub-menu:hover {
   border-bottom: 3px solid;
   border-bottom-color: #6a0e0b;
 }
-p a.main-link:link {
+a.main-link:link {
   color: inherit;
   text-decoration: inherit;
   font-size: inherit;
@@ -192,6 +203,10 @@ p a.main-link:link {
   color: #96b597;
   text-decoration: inherit;
   font-size: inherit;
+}
+p a.main-link:link i {
+  color: white;
+  text-decoration: inherit;
 }
 a.main-link:visited {
   color: inherit;
@@ -203,6 +218,10 @@ p a.main-link:visited {
   text-decoration: inherit;
   font-size: inherit;
 }
+p a.main-link:visited i {
+  color: white;
+  text-decoration: inherit;
+}
 a.main-link:hover {
   color: #6a0e0b;
   text-decoration: inherit;
@@ -212,6 +231,10 @@ p a.main-link:hover {
   color: #6a0e0b;
   text-decoration: inherit;
   font-size: inherit;
+}
+p a.main-link:hover i {
+  color: #6a0e0b;
+  text-decoration: inherit;
 }
 a.main-link:active {
   color: #6a0e0b;
