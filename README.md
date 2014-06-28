@@ -5,35 +5,38 @@ To run locally:
 
 To compile less into css:
 ```
-make less
-
-# or
-
-lessc css/master.less > css/master.css
+$ make less
 ```
+or
+```
+$ lessc css/master.less > css/master.css
+```
+
 Using live reload:
 ```
-make guard
-
-# or
-
-bundler install
-guard
+$ make guard
 ```
+or
+```
+$ bundler install
+$ guard
+```
+
 Using jekyll to serve the webpages:
 ```
-make serve
-
-# or
-
-jekyll serve --watch
+$ make serve
+```
+or
+```
+$ jekyll serve --watch
 ```
 To just build:
 ```
-make jekyll
-
-#or
-
-jekyll build
+$ make jekyll
 ```
-To use less instead of css, uncomment 
+or
+```
+$ jekyll build
+```
+
+To use less instead of css, comment line 10 uncomment lines 12 and 13 in head.html
