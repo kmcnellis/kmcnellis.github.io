@@ -41,7 +41,6 @@ body {
     -moz-border-radius: 10px;
     border-radius: 10px;
     background-color: @box-color;
-    min-height: 151px + 2*@size-base;
     text-align: left;
     font-weight: lighter;
     color: @titleBar-color;
@@ -70,8 +69,8 @@ h2{
     margin-left:0;
     margin-bottom:0;
     padding-top:@size-small/2;
-    line-height:0;
 }
+
 h3{
     font-family: @font-sans;
     font-size: @size-small;
@@ -141,9 +140,14 @@ a:active {
 .content-split{
     padding-top: @size-small;
 }
+.content-mixed{
+    display:relative;
+    width: 100%;
+    text-align: center;
+}
 .content-title{
     display:inline-block;
-    width: 10%;
+    width: 12%;
     vertical-align: top;
     padding-top: @size-inc;
 }
@@ -151,32 +155,46 @@ a:active {
     padding-left: @size-large;
     display:inline-block;
     vertical-align: top;
-    width: 70%;
+    width: 68%;
     padding-top: @size-inc;
 
 }
 .content-link{
-    padding-left: @size-large;
-    display:inline-block;
-    width: 95%;
-    height: 100%;
-    margin-top: @size-inc;
-    height: 80px;
+    display:relative;
+    width: 100%;
+    padding-top: @size-base;
+    padding-bottom: @size-base;
+    line-height: 1em;
     text-align: center;
-    vertical-align: top;
 
 }
+ .main-link i{
+    font-size: @size-medium;
+    font-color: inherit;
+}
+.base-bar.main-link i{
+    font-color: inherit;
+    font-size: @size-small;
+
+
+}
+
+.main-link a:link{
+    font-color: white;
+}
+
+
 .content-link p{
     display:inline-block;
     vertical-align: middle;
 }
+
 .content-image{
     display:inline-block;
     padding-right: @size-base;
-    -moz-osx-font-smoothing: grayscale;
     vertical-align: middle;
-
 }
+
 .home-menu{
     font-family: @font-serif;
     text-align: center;
@@ -206,7 +224,7 @@ a.sub-menu:hover{
     border-bottom: 3px solid;
     border-bottom-color:@Evergreen-red;
 }
-p a.main-link:link {
+a.main-link:link {
     color: inherit;
     text-decoration: inherit;
     font-size: inherit;
@@ -218,29 +236,46 @@ p a.main-link:link {
     font-size: inherit;
 
 }
+p a.main-link:link i{
+    color: white;
+    text-decoration: inherit;
+}
+
 a.main-link:visited {
     color: inherit;
     text-decoration: inherit;
     font-size: inherit;
-
 }
+
 p a.main-link:visited {
     color: @Evergreen-palegreen;
     text-decoration: inherit;
     font-size: inherit;
-
 }
+
+p a.main-link:visited i{
+    color: white;
+    text-decoration: inherit;
+}
+
 a.main-link:hover {
     color: @Evergreen-red;
     text-decoration: inherit;
     font-size: inherit;
 }
+
 p a.main-link:hover {
     color: @Evergreen-red;
     text-decoration: inherit;
     font-size: inherit;
 
 }
+
+p a.main-link:hover i{
+    color: @Evergreen-red;
+    text-decoration: inherit;
+}
+
 a.main-link:active {
     color: @Evergreen-red;
     text-decoration: inherit;

@@ -15,7 +15,7 @@ body {
   margin-left: 4%;
   margin-right: 4%;
   margin-top: 16px;
-  margin-bottom: 2%;
+  margin-bottom: 52px;
 }
 .home {
   margin-top: 20%;
@@ -54,25 +54,26 @@ h1 {
 }
 h2 {
   font-family: 'Raleway', sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 700;
   color: #dcdcdc;
   margin-top: 0;
   margin-right: 0;
   margin-left: 0;
   margin-bottom: 0;
-  display: inline;
+  padding-top: 8px;
+  line-height: 0;
 }
 h3 {
   font-family: 'Raleway', sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 400;
   color: #dcdcdc;
   margin-top: 0;
   margin-right: 0;
   margin-left: 0;
   margin-bottom: 0;
-  display: inline;
+  padding: 0;
 }
 p {
   font-family: 'Raleway', sans-serif;
@@ -84,7 +85,7 @@ p {
   margin-left: 0;
   margin-bottom: 0;
 }
-img {
+.main-img {
   margin: 8px;
   margin-left: 16px;
   float: right;
@@ -99,30 +100,65 @@ img {
   background-color: #08400c;
 }
 a:link {
-  color: inherit;
   text-decoration: inherit;
   font-size: inherit;
 }
 a:visited {
-  color: inherit;
   text-decoration: inherit;
   font-size: inherit;
 }
 a:hover {
-  color: inherit;
-  xt-decoration: inherit;
+  text-decoration: inherit;
   font-size: inherit;
 }
 a:active {
-  color: inherit;
-  tx-ecoration: inherit;
+  text-decoration: inherit;
   font-size: inherit;
 }
 .title {
   padding-top: 8px;
   height: 40px;
 }
-.sub {
+.content-box {
+  width: 100%;
+}
+.content-split {
+  padding-top: 16px;
+}
+.content-title {
+  display: inline-block;
+  width: 10%;
+  vertical-align: top;
+  padding-top: 4px;
+}
+.content-text {
+  padding-left: 32px;
+  display: inline-block;
+  vertical-align: top;
+  width: 70%;
+  padding-top: 4px;
+}
+.content-link {
+  padding-left: 32px;
+  display: inline-block;
+  width: 95%;
+  height: 100%;
+  margin-top: 4px;
+  height: 80px;
+  text-align: center;
+  vertical-align: top;
+}
+.content-link p {
+  display: inline-block;
+  vertical-align: middle;
+}
+.content-image {
+  display: inline-block;
+  padding-right: 8px;
+  -moz-osx-font-smoothing: grayscale;
+  vertical-align: middle;
+}
+.home-menu {
   font-family: 'Quattrocento', serif;
   text-align: center;
   font-size: 32px;
@@ -130,17 +166,30 @@ a:active {
   color: #115215;
   height: 24px;
 }
-.sub-hover {
+.title.home-menu {
+  color: #dcdcdc;
+}
+.sub-menu {
+  font-family: inherit;
+  text-align: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  height: inherit;
   padding-left: 4px;
   padding-right: 4px;
   margin: 0 4px 0;
-  border-bottom: 3px solid #313131;
 }
-a.sub-hover:hover {
+a.sub-menu:hover {
+  border-bottom: 3px solid;
   border-bottom-color: #6a0e0b;
 }
 p a.main-link:link {
   color: inherit;
+  text-decoration: inherit;
+  font-size: inherit;
+}
+p a.main-link:link {
+  color: #96b597;
   text-decoration: inherit;
   font-size: inherit;
 }
@@ -149,27 +198,22 @@ a.main-link:visited {
   text-decoration: inherit;
   font-size: inherit;
 }
-a.main-link:hover {
-  color: #6a0e0b;
-  text-decoration: inherit;
-  font-size: inherit;
-}
-a.main-link:active {
-  color: #6a0e0b;
-  text-decoration: inherit;
-  font-size: inherit;
-}
-p a.main-link:link {
-  color: #96b597;
-  text-decoration: inherit;
-  font-size: inherit;
-}
 p a.main-link:visited {
   color: #96b597;
   text-decoration: inherit;
   font-size: inherit;
 }
+a.main-link:hover {
+  color: #6a0e0b;
+  text-decoration: inherit;
+  font-size: inherit;
+}
 p a.main-link:hover {
+  color: #6a0e0b;
+  text-decoration: inherit;
+  font-size: inherit;
+}
+a.main-link:active {
   color: #6a0e0b;
   text-decoration: inherit;
   font-size: inherit;
@@ -190,7 +234,7 @@ p a.main-link:active {
   box-shadow: 0px 1px 4px 2px black;
   top: 0;
 }
-.header {
+.title-bar {
   width: 100%;
   display: block;
 }
@@ -218,19 +262,22 @@ p a.main-link:active {
   font-size: 40px;
   margin: 0 4px;
 }
-.header li {
+.title-bar a {
+  color: #dcdcdc;
+}
+.title-bar li {
   text-align: left;
   font-weight: lighter;
   color: #dcdcdc;
 }
-.header ul {
+.title-bar ul {
   list-style: none;
   display: inline-block;
   margin: 0;
   margin-top: 4px;
   padding: 0;
 }
-.header ul li {
+.title-bar ul li {
   float: left;
   padding-top: 0;
   padding-left: 2;
@@ -241,7 +288,7 @@ p a.main-link:active {
   font-size: 24px;
   height: 1.1em ;
 }
-.header ul li:hover {
+.title-bar ul li:hover {
   border-bottom-color: #6a0e0b;
 }
 #selected {
@@ -254,10 +301,10 @@ p a.main-link:active {
   text-align: center;
   vertical-align: center;
   position: absolute;
+  height: 24px;
+  padding-top: 12px;
   font-family: 'Quattrocento', serif;
-  height: 1em;
   font-size: 12px;
   color: #dcdcdc;
-  padding: 16px;
   border-top: 4px solid #08400c;
 }
