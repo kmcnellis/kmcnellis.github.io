@@ -10,9 +10,9 @@ $ guard
 ```
 Using jekyll to serve the webpages:
 ```
-jekyll serve --watch
+$ jekyll serve --watch
 ```
 To just build:
 ```
-jekyll build
+$ jekyll build
 ```
