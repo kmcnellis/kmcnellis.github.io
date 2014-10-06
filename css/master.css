@@ -20,8 +20,8 @@ body {
   margin-bottom: 52px;
 }
 .home {
-  margin-top: 20%;
-  margin-bottom: 20%;
+  margin-top: 15%;
+  margin-bottom: 15%;
   font-family: 'Quattrocento', serif;
   text-align: center;
   font-size: 32px;
@@ -30,6 +30,7 @@ body {
   vertical-align: middle;
 }
 .page-content {
+  margin-top: 2%;
   padding-top: 2%;
   padding-right: 2%;
   padding-left: 2%;
@@ -138,6 +139,7 @@ a:active {
 }
 .content-text {
   padding-left: 32px;
+  padding-right: 32px;
   display: inline-block;
   vertical-align: top;
   width: 68%;
@@ -171,26 +173,54 @@ a:active {
   padding-right: 8px;
   vertical-align: middle;
 }
-.home-menu {
+a.home-menu {
   font-family: 'Quattrocento', serif;
   text-align: center;
-  font-size: 32px;
+  font-size: 40px;
   font-weight: lighter;
-  color: #115215;
+  color: white;
   height: 24px;
+}
+.home-menu {
+  padding-left: 40px;
+  padding-right: 40px;
+  box-shadow: 0px 10px 10px -12px #96b597;
+}
+a.home-menu:hover {
+  color: #6a0e0b;
+  box-shadow: 0px 12px 12px -12px #6a0e0b;
+}
+a.home-menu:active {
+  color: #6a0e0b;
+  box-shadow: 0px 12px 12px -12px #6a0e0b;
 }
 .title.home-menu {
   color: #dcdcdc;
 }
+.tagline {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+a.tagline {
+  font-family: 'Quattrocento', serif;
+  text-align: center;
+  font-size: 20px;
+  font-weight: lighter;
+  color: #96b597;
+  height: 24px;
+}
 .sub-menu {
-  font-family: inherit;
-  text-align: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-  height: inherit;
   padding-left: 4px;
   padding-right: 4px;
   margin: 0 4px 0;
+}
+a.sub-menu {
+  font-family: 'Quattrocento', serif;
+  text-align: center;
+  font-size: 24px;
+  font-weight: lighter;
+  color: #125416;
+  height: 24px;
 }
 a.sub-menu:hover {
   border-bottom: 3px solid;

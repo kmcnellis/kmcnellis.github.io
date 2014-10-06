@@ -22,8 +22,8 @@ body {
 }
 
 .home{
-    margin-top: 20%;
-    margin-bottom: 20%;
+    margin-top: 15%;
+    margin-bottom: 15%;
 
     font-family: @font-serif;
     text-align: center;
@@ -34,6 +34,8 @@ body {
 }
 
 .page-content{
+    margin-top: 2%;
+
     padding-top: 2%;
     padding-right: 2%;
     padding-left: 2%;
@@ -153,6 +155,8 @@ a:active {
 }
 .content-text{
     padding-left: @size-large;
+    padding-right: @size-large;
+
     display:inline-block;
     vertical-align: top;
     width: 68%;
@@ -175,14 +179,11 @@ a:active {
 .base-bar.main-link i{
     font-color: inherit;
     font-size: @size-small;
-
-
 }
 
 .main-link a:link{
     font-color: white;
 }
-
 
 .content-link p{
     display:inline-block;
@@ -195,32 +196,70 @@ a:active {
     vertical-align: middle;
 }
 
-.home-menu{
+a.home-menu{
     font-family: @font-serif;
     text-align: center;
-    font-size: @size-large;
+    font-size: @size-title;
     font-weight: lighter;
-    color: @Evergreen-lightgreen;
+    color: white;
     height: @size-medium;
+}
+
+.home-menu{
+    padding-left: @size-title;
+    padding-right: @size-title;
+    box-shadow:0px 10px 10px -12px @Evergreen-palegreen;
 
 }
+
+a.home-menu:hover{
+    color:@Evergreen-red;
+    box-shadow:0px 12px 12px -12px @Evergreen-red;
+}
+
+a.home-menu:active{
+    color:@Evergreen-red;
+    box-shadow:0px 12px 12px -12px @Evergreen-red;
+}
+
 .title.home-menu{
     color:  @titleText-color;
 }
-.sub-menu{
-    font-family: inherit;
-    text-align: inherit;
-    font-size: inherit;
-    font-weight: inherit;
-    height: inherit;
 
+.tagline{
+    padding-left: @size-inc;
+    padding-right: @size-inc;
+}
+
+a.tagline{
+    font-family: @font-serif;
+    text-align: center;
+    font-size: @size-heading;
+    font-weight: lighter;
+    color: @Evergreen-palegreen;
+    height: @size-medium;
+}
+
+.sub-menu{
     padding-left: @size-inc;
     padding-right: @size-inc;
     // position: relative;
     margin: 0 @size-inc 0;
     //border-bottom: 3px solid  @Evergreen-dark;
 }
+
+a.sub-menu{
+    font-family: @font-serif;
+    text-align: center;
+    font-size: @size-medium;
+    font-weight: lighter;
+    color: @Evergreen-lightgreen;
+    height: @size-medium;
+}
+
 a.sub-menu:hover{
+    // box-shadow:0px 10px 8px -8px @Evergreen-red;
+
     border-bottom: 3px solid;
     border-bottom-color:@Evergreen-red;
 }
@@ -228,14 +267,14 @@ a.main-link:link {
     color: inherit;
     text-decoration: inherit;
     font-size: inherit;
-
 }
+
 p a.main-link:link {
     color: @Evergreen-palegreen;
     text-decoration: inherit;
     font-size: inherit;
-
 }
+
 p a.main-link:link i{
     color: white;
     text-decoration: inherit;

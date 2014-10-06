@@ -3,38 +3,38 @@
 	<span id="title-head" src="/"><a href="/">Kiana McNellis</a></span>
 	<div class="sub-link">
 	<ul>
-		{% if page.name == "about" %}
+		{% if page.selected == "about" %}
 		<li id= "selected"><a href="/about/">About</a></li>
 		{% else %}
 		<li><a href="/about/">About</a></li>
 		{% endif %}
 
-		{% if page.name == "work" %}
+		{% if page.selected == "work" %}
 		<li id= "selected"><a href="/work/">Work</a></li>
 		{% else %}
 		<li><a href="/work/">Work</a></li>
 		{% endif %}
 
-		{% if page.name == "projects" %}
+		{% if page.selected == "projects" %}
 		<li id= "selected"><a href="/projects/">Projects</a> </li>
 		{% else %}
 		<li><a href="/projects/">Projects</a> </li>
 		{% endif %}
 
-		{% if page.name == "college" %}
+		{% if page.selected == "college" %}
 		<li id= "selected"><a href="/college/">College</a> </li>
 		{% else %}
 		<li><a href="/college/">College</a> </li>
 		{% endif %}
 
 
-		{% if page.name == "contact" %}
+		{% if page.selected == "contact" %}
 		<li id= "selected"><a href="/contact/">Contact</a> </li>
 		{% else %}
 		<li><a href="/contact/">Contact</a> </li>
 		{% endif %}
 
-		{% if page.name == "resume" %}
+		{% if page.selected == "resume" %}
 		<li id= "selected"><a href="/content/Resume-web.pdf" target="_blank">Resume</a> </li>
 		{% else %}
 		<li><a href="/content/Resume-web.pdf" target="_blank">Resume</a> </li>

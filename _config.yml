@@ -2,7 +2,6 @@ exclude: [gemfile, Gemfile.lock, guardfile, makefile, README.txt]
 defaults:
   -
     scope:
-      path: "" # empty string for all files
+      path: "" # an empty string here means all files in the project
     values:
       layout: "default"
-  -

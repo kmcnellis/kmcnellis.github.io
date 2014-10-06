@@ -12,4 +12,4 @@ serve: less
 
 guard: less
 	bundler install
-	guard
+	guard --no-bundler-warning
