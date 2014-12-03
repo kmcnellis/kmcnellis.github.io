@@ -2,18 +2,22 @@
 basic.less is only for storing variables to be used across less files*/
 body {
   font-size: 8px;
-  background-color: #000000;
+  background-color: #111111;
   width: 100%;
+  margin: 0;
+  padding: 0;
 }
 #container {
   min-height: 100%;
   min-width: 100%;
   position: absolute;
   top: 0;
-  color: #000000;
+  margin: 0;
+  padding: 0;
+  color: #111111;
 }
 #content {
-  color: #000000;
+  color: #111111;
   margin-left: 4%;
   margin-right: 4%;
   margin-top: 16px;
@@ -26,7 +30,7 @@ body {
   text-align: center;
   font-size: 32px;
   font-weight: lighter;
-  color: #dcdcdc;
+  color: #f8f8f8;
   vertical-align: middle;
 }
 .page-content {
@@ -40,13 +44,13 @@ body {
   background-color: #313131;
   text-align: left;
   font-weight: lighter;
-  color: #000000;
+  color: #111111;
 }
 h1 {
   font-family: 'Raleway', sans-serif;
   font-size: 24px;
   font-weight: 400;
-  color: #dcdcdc;
+  color: #f8f8f8;
   margin-top: 0;
   margin-right: 0;
   margin-left: 0;
@@ -58,7 +62,7 @@ h2 {
   font-family: 'Raleway', sans-serif;
   font-size: 16px;
   font-weight: 700;
-  color: #dcdcdc;
+  color: #d6d6d6;
   margin-top: 0;
   margin-right: 0;
   margin-left: 0;
@@ -69,7 +73,7 @@ h3 {
   font-family: 'Raleway', sans-serif;
   font-size: 16px;
   font-weight: 400;
-  color: #dcdcdc;
+  color: #d6d6d6;
   margin-top: 0;
   margin-right: 0;
   margin-left: 0;
@@ -184,18 +188,18 @@ a.home-menu {
 .home-menu {
   padding-left: 40px;
   padding-right: 40px;
-  box-shadow: 0px 10px 10px -12px #96b597;
+  box-shadow: 0px 9px 9px -12px #96b597;
 }
 a.home-menu:hover {
   color: #6a0e0b;
-  box-shadow: 0px 12px 12px -12px #6a0e0b;
+  box-shadow: 0px 9px 9px -10px #6a0e0b;
 }
 a.home-menu:active {
   color: #6a0e0b;
-  box-shadow: 0px 12px 12px -12px #6a0e0b;
+  box-shadow: 0px 9px 9px -10px #6a0e0b;
 }
 .title.home-menu {
-  color: #dcdcdc;
+  color: #f8f8f8;
 }
 .tagline {
   padding-left: 4px;
@@ -219,7 +223,7 @@ a.sub-menu {
   text-align: center;
   font-size: 24px;
   font-weight: lighter;
-  color: #125416;
+  color: #1b5915;
   height: 24px;
 }
 a.sub-menu:hover {
@@ -280,13 +284,13 @@ p a.main-link:active {
 }
 #header {
   width: 100%;
-  color: #dcdcdc;
-  background-color: #000000;
+  color: #f8f8f8;
+  background-color: #111111;
   font-family: 'Quattrocento', serif;
   font-weight: normal;
   margin: 0 0 0 0;
   padding: 4px 4px 0;
-  box-shadow: 0px 1px 4px 2px black;
+  box-shadow: 0px 3px 15px -5px #000000;
   top: 0;
 }
 .title-bar {
@@ -318,12 +322,11 @@ p a.main-link:active {
   margin: 0 4px;
 }
 .title-bar a {
-  color: #dcdcdc;
+  color: #f8f8f8;
 }
 .title-bar li {
   text-align: left;
   font-weight: lighter;
-  color: #dcdcdc;
 }
 .title-bar ul {
   list-style: none;
@@ -343,11 +346,14 @@ p a.main-link:active {
   font-size: 24px;
   height: 1.1em ;
 }
+.title-bar ul li a {
+  color: #d6d6d6;
+}
 .title-bar ul li:hover {
   border-bottom-color: #6a0e0b;
 }
 #selected {
-  border-bottom-color: #08400c;
+  border-bottom-color: #1b5915;
 }
 #footer {
   bottom: 0;
@@ -360,6 +366,6 @@ p a.main-link:active {
   padding-top: 12px;
   font-family: 'Quattrocento', serif;
   font-size: 12px;
-  color: #dcdcdc;
+  color: #f8f8f8;
   border-top: 4px solid #08400c;
 }

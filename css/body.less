@@ -3,6 +3,8 @@ body {
     font-size: @size-base;
     background-color: @background-color;
     width: 100%;
+    margin:0;
+    padding:0;
 }
 
 #container {
@@ -10,6 +12,8 @@ body {
    min-width:100%;
    position:absolute;
    top:0;
+   margin:0;
+   padding:0;
    color: @titleBar-color;
 }
 
@@ -65,7 +69,7 @@ h2{
     font-family: @font-sans;
     font-size: @size-small;
     font-weight: 700;
-    color: @heading-color;
+    color: @titleSub-color;
     margin-top:0;
     margin-right:0;
     margin-left:0;
@@ -77,7 +81,7 @@ h3{
     font-family: @font-sans;
     font-size: @size-small;
     font-weight: 400;
-    color: @heading-color;
+    color: @titleSub-color;
     margin-top:0;
     margin-right:0;
     margin-left:0;
@@ -208,18 +212,18 @@ a.home-menu{
 .home-menu{
     padding-left: @size-title;
     padding-right: @size-title;
-    box-shadow:0px 10px 10px -12px @Evergreen-palegreen;
+    box-shadow:0px 9px 9px -12px @tag-color;
 
 }
 
 a.home-menu:hover{
-    color:@Evergreen-red;
-    box-shadow:0px 12px 12px -12px @Evergreen-red;
+    color:@hover-color;
+    box-shadow:0px 9px 9px -10px @hover-color;
 }
 
 a.home-menu:active{
-    color:@Evergreen-red;
-    box-shadow:0px 12px 12px -12px @Evergreen-red;
+    color:@hover-color;
+    box-shadow:0px 9px 9px -10px @hover-color;
 }
 
 .title.home-menu{
@@ -236,16 +240,14 @@ a.tagline{
     text-align: center;
     font-size: @size-heading;
     font-weight: lighter;
-    color: @Evergreen-palegreen;
+    color: @tag-color;
     height: @size-medium;
 }
 
 .sub-menu{
     padding-left: @size-inc;
     padding-right: @size-inc;
-    // position: relative;
     margin: 0 @size-inc 0;
-    //border-bottom: 3px solid  @Evergreen-dark;
 }
 
 a.sub-menu{
@@ -253,15 +255,13 @@ a.sub-menu{
     text-align: center;
     font-size: @size-medium;
     font-weight: lighter;
-    color: @Evergreen-lightgreen;
+    color: @sub-color;
     height: @size-medium;
 }
 
 a.sub-menu:hover{
-    // box-shadow:0px 10px 8px -8px @Evergreen-red;
-
     border-bottom: 3px solid;
-    border-bottom-color:@Evergreen-red;
+    border-bottom-color:@hover-color;
 }
 a.main-link:link {
     color: inherit;
@@ -270,7 +270,7 @@ a.main-link:link {
 }
 
 p a.main-link:link {
-    color: @Evergreen-palegreen;
+    color: @tag-color;
     text-decoration: inherit;
     font-size: inherit;
 }
@@ -287,7 +287,7 @@ a.main-link:visited {
 }
 
 p a.main-link:visited {
-    color: @Evergreen-palegreen;
+    color: @tag-color;
     text-decoration: inherit;
     font-size: inherit;
 }
@@ -298,31 +298,31 @@ p a.main-link:visited i{
 }
 
 a.main-link:hover {
-    color: @Evergreen-red;
+    color: @hover-color;
     text-decoration: inherit;
     font-size: inherit;
 }
 
 p a.main-link:hover {
-    color: @Evergreen-red;
+    color: @hover-color;
     text-decoration: inherit;
     font-size: inherit;
 
 }
 
 p a.main-link:hover i{
-    color: @Evergreen-red;
+    color: @hover-color;
     text-decoration: inherit;
 }
 
 a.main-link:active {
-    color: @Evergreen-red;
+    color: @hover-color;
     text-decoration: inherit;
     font-size: inherit;
 
 }
 p a.main-link:active {
-    color: @Evergreen-red;
+    color: @hover-color;
     text-decoration: inherit;
     font-size: inherit;
 

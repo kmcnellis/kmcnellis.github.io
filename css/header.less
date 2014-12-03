@@ -8,13 +8,11 @@
     font-weight: normal;
     margin: 0 0 0 0;
     padding: @size-inc @size-inc 0;
-    box-shadow: 0px 1px 4px 2px black;
+    box-shadow: 0px 3px 15px -5px black;
     top:0;
 }
 .title-bar{
     width:100%;
-    //padding:0 0 @font-size-inc;
-    //margin:0;
     display: block;
 
 }
@@ -54,8 +52,6 @@
 .title-bar li{
     text-align: left;
     font-weight: lighter;
-    color: @titleLine-color;
-
 }
 
 .title-bar ul {
@@ -73,22 +69,24 @@
 
     padding-left: 2;
     padding-right: 2;
-    // position: relative;
     margin: 0 @size-inc*2 0;
 
     border-bottom: 3px solid;
-    border-bottom-color: @Evergreen-dark;
+    border-bottom-color: @box-color;
     font-size: @size-medium;
     height: 1.1em ;
 
 }
+.title-bar  ul li a{
+    color: @titleSub-color
+}
 
 .title-bar ul li:hover{
-    border-bottom-color:@Evergreen-red;
+    border-bottom-color:@hover-color;
 }
 
 #selected{
-    border-bottom-color:@Evergreen-green;
+    border-bottom-color:@sub-color;
 }
 
 #footer{
@@ -103,7 +101,7 @@
 
     font-family: @font-serif;
     font-size: @size-inc+@size-base;
-    color: @titleText-color;
-    border-top: @size-inc solid  @Evergreen-green;
+    color: @heading-color;
+    border-top: @size-inc solid  @divider-color;
 
 }
