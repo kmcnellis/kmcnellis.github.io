@@ -186,7 +186,7 @@ a:active {
 }
 
 .main-link a:link{
-    font-color: white;
+    font-color: @tag-color;
 }
 
 .content-link p{
@@ -198,6 +198,8 @@ a:active {
     display:inline-block;
     padding-right: @size-base;
     vertical-align: middle;
+    box-shadow:0px 9px 9px -12px @tag-color;
+
 }
 
 a.home-menu{
@@ -205,15 +207,14 @@ a.home-menu{
     text-align: center;
     font-size: @size-title;
     font-weight: lighter;
-    color: white;
+    color: @titleText-color;
     height: @size-medium;
 }
 
 .home-menu{
     padding-left: @size-title;
     padding-right: @size-title;
-    box-shadow:0px 9px 9px -12px @tag-color;
-
+    
 }
 
 a.home-menu:hover{
@@ -276,7 +277,7 @@ p a.main-link:link {
 }
 
 p a.main-link:link i{
-    color: white;
+    color: @sub-color;
     text-decoration: inherit;
 }
 
@@ -293,7 +294,7 @@ p a.main-link:visited {
 }
 
 p a.main-link:visited i{
-    color: white;
+    color: @sub-color;
     text-decoration: inherit;
 }
 
