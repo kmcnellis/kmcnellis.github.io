@@ -184,11 +184,11 @@ a.home-menu {
   font-weight: lighter;
   color: #19187f;
   height: 24px;
+  box-shadow: 0px 9px 9px -12px #14216e;
 }
 .home-menu {
   padding-left: 40px;
   padding-right: 40px;
-  box-shadow: 0px 9px 9px -12px #14216e;
 }
 a.home-menu:hover {
   color: #d4d4d4;
@@ -255,7 +255,7 @@ p a.main-link:visited {
   font-size: inherit;
 }
 p a.main-link:visited i {
-  color: white;
+  color: #101a59;
   text-decoration: inherit;
 }
 a.main-link:hover {
