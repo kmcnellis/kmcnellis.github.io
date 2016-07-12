@@ -1,11 +1,7 @@
 .PHONY: all less jekyll serve guard build install
-all: jekyll
+all: install build
 
-jekyll:
-	jekyll build
-
-serve:
-	jekyll serve --watch
+serve: live
 
 live:
 	grunt serve
