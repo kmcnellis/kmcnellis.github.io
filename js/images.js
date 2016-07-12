@@ -24,5 +24,5 @@ $(function() {
 		setTimeout(nextBackground, 15000);
 	};
 
-	setTimeout(nextBackground, 2000);
+	setTimeout(nextBackground, 15000);
 });
