@@ -1,0 +1,8 @@
+node_modules
+public
+.tmp
+bower_components
+.jekyll
+_site
+npm-debug.log
+dist

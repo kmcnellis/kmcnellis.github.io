@@ -1,0 +1,41 @@
+{
+  "name": "GuildWebsite",
+  "version": "0.0.1",
+  "description": "The Inventor's Guild Website",
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.com/inventorsguild/website"
+  },
+  "keywords": [],
+  "author": "Kiana McNellis",
+  "contributors": [
+    "Kiana McNellis <kiana@kmcnellis.com> (http://kmcnellis.com)"
+  ],
+  "devDependencies": {
+    "connect": "^3.4.1",
+    "grunt": "^1.0.1",
+    "grunt-autoprefixer": "^3.0.4",
+    "grunt-build-control": "^0.7.0",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-connect": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^1.0.1",
+    "grunt-contrib-htmlmin": "^1.4.0",
+    "grunt-contrib-imagemin": "^1.0.0",
+    "grunt-contrib-less": "^1.3.0",
+    "grunt-contrib-uglify": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-critical": "^0.2.0",
+    "grunt-jekyll": "^0.4.4",
+    "grunt-shell": "^1.3.0",
+    "grunt-svgmin": "^3.2.0",
+    "jit-grunt": "^0.10.0",
+    "less": "^2.6.1",
+    "time-grunt": "^1.3.0"
+  },
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=0.10.0"
+  }
+}
