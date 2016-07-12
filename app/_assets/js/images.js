@@ -2,18 +2,20 @@ $(function() {
 	var body = $('body');
 
 	var current = 1;
-	var num = current;
+	var next = 2;
 	var total = 36;
 
 	function createURL(){
-		num = Math.floor(Math.random() * total);
+		current = next;
+		next = Math.floor(Math.random() * total);
 
-		if (num === current){
-			num = (current+1)%total;
+		if (next === current){
+			next = (current+1)%total;
 		}
+		var imgNext = new Image();
+		imgNext.src = 'img/backgrounds/img'+next+'.jpg';
 
-		current = num;
-		return 'url(/img/backgrounds/img'+num+'.jpg)';
+		return 'url(/img/backgrounds/img'+current+'.jpg)';
 	};
 
 	function nextBackground() {
@@ -21,8 +23,9 @@ $(function() {
 			'background-image',
 			createURL()
 		);
-		setTimeout(nextBackground, 15000);
+
+		setTimeout(nextBackground, 10000);
 	};
 
-	setTimeout(nextBackground, 15000);
+	setTimeout(nextBackground, 10000);
 });
