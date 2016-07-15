@@ -63,6 +63,17 @@
     text-align: justify;
   }
 }
+.text a {
+  text-decoration: none;
+}
+.text a:link,
+.text a:visited {
+  color: #71b97a;
+}
+.text a:hover,
+.text a:active {
+  color: #126604;
+}
 .text a.contact-link {
   font-size: 1.5em;
   margin: .3em;
