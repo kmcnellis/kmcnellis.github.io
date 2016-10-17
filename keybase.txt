@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/kmcnellis
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://kmcnellis.com
+  * I am kmcnellis (https://keybase.io/kmcnellis) on keybase.
+  * I have a public key with fingerprint 0E5F E78E BD12 8FEC D6B0  81C7 64A1 18DD 146D 24EC
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "01018aa160db491ee2e49c42f752beab6f726b3654a88284afbfef6833a8956c58b40a",
+            "fingerprint": "0e5fe78ebd128fecd6b081c764a118dd146d24ec",
+            "host": "keybase.io",
+            "key_id": "64a118dd146d24ec",
+            "kid": "01018aa160db491ee2e49c42f752beab6f726b3654a88284afbfef6833a8956c58b40a",
+            "uid": "da872f74747336743016bd33af115719",
+            "username": "kmcnellis"
+        },
+        "service": {
+            "hostname": "kmcnellis.com",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1476725372,
+    "expire_in": 157680000,
+    "prev": "c99325bdfa9592dcb673bcf2d5249b153fc5350510d31de1a2359c8a89daf2cb",
+    "seqno": 4,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.58
+Comment: https://keybase.io/crypto
+
+yMIkAnicrVJZSFVBGL623bpmRVCmCdUEbYqcOfu59JCFaEGmSQtU3GY7elLPud5z
+7q1sMUIoTGiBzLKiDanMBykr20jzIbIFLKKCnpKIiBYtKmybI/USPTbzMMw/3/fN
+93/8XSlDA6EkN/g62L72XSipu+NgPLByeGjzJoAduhGEN4EyNniwcspcL1JmURAG
+AhSgjhBUBYplAzImMtkgsmhqiogZwqqpiSqWVEVGui7qMjKxyUxVlySkG4pKFB3L
+AgJZwLTsEhaLxizb82WZYjJNZ5hCUTcZoSoWdEg0VUYQ6pRCWaWizAgnljquz+Dm
+MHJZtuXwGr9EBu39A/+ffccH5SjSNc6V+ZYkVZMlAaqYcrAJoaJBwwe6LGajCuZ7
+rSA2Ky+3XLAlC/BywiLMT9Zv5W9INnEqODsaczyHOOX8qdTzom7Yp3oboz52PcOR
+3yoRbNmUJ8kZCRZzLccGYciRxLN8WShrqiYqkiZmAbYhasVYxPIRiqbqAl/+PyzB
+JYlhSKKCqYkMxRApwaomYWKKVBFlA0NFMokiKYICBSpByiASJcUgOs+GIlMkGPh9
+VdoOCMvcJirhkq5VYiMvHmNgS+fN1cMCSaHAiOFD/AkLhEaN+zN35/cHv4+3+5Pv
+Tm9dUVV26loRaT2MBiYuKPp8/Fn+5ET8xqhZqx53pkaLH8WPOHjr/IznYy4s/LLt
+RU393kMdk5rSwMuqlp5o07ycwoHcC6PTqnpn1Ab7uvflqU8ftFWn9ATbJzy59fH2
+kqZL0ebWN+15Y6tyM/OPpjUsP9F7PvNVUc6w2XPzDhgZc2oaPh0rPv3h4n6Xzp1S
+uKag0xPI5cSekXkfTtW9d8X6gZSzO3ZfOZ3zc9fmqY1fl1aCZe/Su799PLe4r0VO
+vFlHn+y8d+btj58zjx031MbkMUYQpD9o6Me1ZyvPNM+72nZn6PVFTanb57fWddXX
+fJmWb1ennQznLog9LMhk94t/ARiFQII=
+=Zkvc
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/kmcnellis
+
+==================================================================
