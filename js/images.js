@@ -15,7 +15,7 @@ $(function() {
 		var imgNext = new Image();
 		imgNext.src = 'img/backgrounds/img'+next+'.jpg';
 
-		return 'url(/img/backgrounds/img'+current+'.jpg)';
+		return 'url(img/backgrounds/img'+current+'.jpg)';
 	};
 
 	function nextBackground() {
